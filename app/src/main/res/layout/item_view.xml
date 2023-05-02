@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/shape"
+    android:clipChildren="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="19dp"
+                android:layout_height="143dp" />
+
+            <ImageView
+                android:id="@+id/imgPriority"
+                android:layout_width="83dp"
+                android:layout_height="99dp"
+                android:layout_gravity="bottom"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <Space
+                android:layout_width="19dp"
+                android:layout_height="143dp" />
+
+            <LinearLayout
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/white"
+                    android:textSize="21sp" />
+
+                <EditText
+                    android:id="@+id/txtEditName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Muokkaa nimeä"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <Space
+                    android:layout_width="19dp"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/textHealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Health"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textAttack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attack"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textDefense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Defense"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Experience"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Record"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="116dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgEdit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#2266B8"
+                    android:src="@drawable/ic_train" />
+
+                <ImageButton
+                    android:id="@+id/imgDelete"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#2266B8"
+                    android:src="@drawable/ic_delete" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="117dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgBattle"
+                    android:layout_width="55dp"
+                    android:layout_height="100dp"
+                    android:backgroundTint="#2266B8"
+                    android:src="@drawable/ic_battle" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
